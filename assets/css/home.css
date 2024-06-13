@@ -1,0 +1,20 @@
+
+.home-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    width: 80vw;
+    height: 50vh;
+    background: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
