@@ -3,12 +3,16 @@ const googleStretegy = require('passport-google-oauth').OAuth2Strategy;
 const crypto = require('crypto');
 const User = require('../models/User');
 
+const googleClientID = '877276571753-u2mt0ghr9ifuoroqpn4vavdcq9ekpsn6.apps.googleusercontent.com';
+const googleClientSecret = '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';
+
+
 // tell passport to use new stretegy for google login
 
 passport.use(new googleStretegy({
-        clientID: '877276571753-u2mt0ghr9ifuoroqpn4vavdcq9ekpsn6.apps.googleusercontent.com',
+        clientID: googleClientID,
 
-        clientSecret: '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',
+        clientSecret: googleClientSecret,
 
         callbackURL: 'http://localhost:10000/auth/google/callback',
         passReqToCallback: true,
